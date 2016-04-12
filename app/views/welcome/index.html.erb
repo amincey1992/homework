@@ -1,0 +1,24 @@
+
+<h3>Text Color Selector</h3>
+ 	<div class="buttons">
+ 	<%= link_to "white", root_path(color: "white"), class: "white btn btn-primary" %>
+	<%= link_to "red", root_path(color: "red"), class: "red btn btn-primary" %>
+	<%= link_to "Blue", root_path(color: "blue"), class: "blue btn btn-primary" %>
+	<%= link_to "green", root_path(color: "green"), class: "green btn btn-primary" %>
+	</div>
+<h1>Welcome to Travel</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<div class="pics">
+<% @travel_pics = ['travel1.jpg','travel2.jpg','travel3.jpg','travel5.jpg' ] %>
+
+<% @travel_pics.each do |pic| %>
+	<%= image_tag pic %>
+<% end %>
+</div>
